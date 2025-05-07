@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
   background: #f5f5f5;
-  color: #cccccc;
+  color: #333333; /* Improved contrast */
   text-align: center;
   padding: 0;
   margin: 0;
@@ -25,7 +25,7 @@ body {
 }
 
 .nav a {
-  color: #cccccc;
+  color: #ffffff; /* Improved contrast */
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
@@ -36,13 +36,13 @@ body {
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #bbbbbb;
+  color: #333333; /* Improved contrast */
   margin: 30px 0 15px;
 }
 
 .description {
   font-size: 16px;
-  color: #bbbbbb;
+  color: #555555; /* Improved contrast */
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.4;
@@ -52,7 +52,7 @@ body {
   width: 200px;
   display: inline-block;
   background: #E31837;
-  color: #801525;
+  color: #ffffff; /* Improved contrast */
   padding: 12px 24px;
   font-size: 18px;
   text-transform: uppercase;
@@ -60,6 +60,12 @@ body {
   font-weight: bold;
   border-radius: 3px;
   margin-top: 30px;
+}
+
+.order-now:hover {
+  background: #c7152e; /* Darker red for hover effect */
+  color: #ffffff; /* Ensure text remains readable */
+  text-decoration: underline; /* Add underline for emphasis */
 }
 
 .main-content {
@@ -87,5 +93,17 @@ body {
 .deal p {
   font-size: 12px;
   font-weight: bold;
-  color: #bbbbbb;
+  color: #555555; /* Improved contrast */
+}
+
+/* Add visually hidden class for accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
